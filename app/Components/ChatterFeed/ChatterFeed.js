@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, TouchableWithoutFeedback } from 'react-native';
-import TopBar from '../NavBars/TopBar/TopBar';
-import BottomBar from '../NavBars/BottomBar/BottomBar';
 
 class ChatterFeed extends Component {
   constructor(props) {
@@ -14,11 +12,9 @@ class ChatterFeed extends Component {
 
 		return	(
       <View style={styles.landingRecord}>
-        <TopBar />
 				<View style={styles.landingRecordContainer}>
           <Text>{"Chatter Feed"}</Text>
         </View>
-        <BottomBar currPage={'ChatterFeed'}/>
       </View>
     );
   }

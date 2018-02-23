@@ -13,8 +13,7 @@ class Login extends Component {
   }
 
   login() {
-    console.log('LOGGING IN')
-    Actions.LandingRecord()
+    Actions.LandingPage()
   }
 
   render() {
