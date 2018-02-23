@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, TouchableWithoutFeedback } from 'react-native';
 
-class ChatterFeed extends Component {
+class LandingRecord extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -11,9 +11,9 @@ class ChatterFeed extends Component {
   render() {
 
 		return	(
-      <View style={styles.chatterFeed}>
-				<View style={styles.chatterFeedContainer}>
-          <Text>{"Chatter Feed"}</Text>
+      <View style={styles.landingRecord}>
+				<View style={styles.landingRecordContainer}>
+          <Text>{"Landing Record"}</Text>
         </View>
       </View>
     );
@@ -21,13 +21,13 @@ class ChatterFeed extends Component {
 }
 
 const styles = StyleSheet.create({
-	chatterFeed: {
+	landingRecord: {
 		height: '100%'
 	},
-	chatterFeedContainer: {
+	landingRecordContainer: {
 		height: '80%',
 	}
 });
 
 
-export default ChatterFeed;
+export default LandingRecord;

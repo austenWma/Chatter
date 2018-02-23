@@ -61,13 +61,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   tabs: {
-    height: '10%',
+    height: '15%',
+    paddingTop: 10,
     flexDirection: 'row',
-    borderWidth: 1,
-    borderTopWidth: 0,
-    borderLeftWidth: 0,
-    borderRightWidth: 0,
-    borderBottomColor: 'rgba(0,0,0,0.05)',
   },
 });
 

@@ -11,8 +11,8 @@ class DiscoverFeed extends Component {
   render() {
 
 		return	(
-      <View style={styles.landingRecord}>
-				<View style={styles.landingRecordContainer}>
+      <View style={styles.discoverFeed}>
+				<View style={styles.discoverFeedContainer}>
           <Text>{"Discover Feed"}</Text>
         </View>
       </View>
@@ -21,10 +21,10 @@ class DiscoverFeed extends Component {
 }
 
 const styles = StyleSheet.create({
-	landingRecord: {
+	discoverFeed: {
 		height: '100%'
 	},
-	landingRecordContainer: {
+	discoverFeedContainer: {
 		height: '80%',
 	}
 });
