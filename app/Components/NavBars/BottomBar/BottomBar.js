@@ -7,7 +7,8 @@ class TopBar extends Component {
     super(props)
     this.state = {
 		}
-		this.goToDiscoverFeedPage = this.goToDiscoverFeedPage.bind(this)
+		this.goToDiscoverFeedPage = this.goToDiscoverFeedPage.bind(this);
+		this.goToChatterFeedPage = this.goToChatterFeedPage.bind(this);
 	}
 	
 	goToDiscoverFeedPage() {
@@ -16,7 +17,14 @@ class TopBar extends Component {
 		}
 	}
 
+	goToChatterFeedPage() {
+		if (this.props.currPage !== 'ChatterFeed') {
+			Actions.ChatterFeed();
+		}
+	}
+
   render() {
+		console.log('RERENDERING')
 		return	(
       <View style={styles.bottomBarContainer}>
 				<View style={styles.discoverContainer}>
@@ -25,12 +33,12 @@ class TopBar extends Component {
           </TouchableOpacity>
 				</View>
 				<View style={styles.uploadContainer}>
-					<TouchableOpacity onPress={() => {console.log('Clicked')}} style={styles.tab}>
+					<TouchableOpacity onPress={() => {console.log('HI')}} style={styles.tab}>
             <Text>Upload</Text>
           </TouchableOpacity>
 				</View>
 				<View style={styles.chatterContainer}>
-					<TouchableOpacity onPress={() => {console.log('Clicked')}} style={styles.tab}>
+					<TouchableOpacity onPress={this.goToChatterFeedPage} style={styles.tab}>
             <Text>Chatter</Text>
           </TouchableOpacity>
 				</View>
